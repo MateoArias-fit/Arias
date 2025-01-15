@@ -1,0 +1,119 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #414A4C, #4facfe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+    box-sizing: border-box;
+    }
+    
+    .container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    }
+    
+    .left {
+    flex: 1;
+    padding: 40px;
+    color: #ffffff;
+    }
+    
+    .logo h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    }
+    
+    .brand-primary {
+    color: #4facfe; 
+    }
+    
+    .brand-secondary {
+    color: #F2F4F7; 
+    }
+    
+    .logo p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+    }
+    
+    .right {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    max-width: 400px;
+    }
+    
+    .right h2 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #1877f2;
+    }
+    
+    .right input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    box-sizing: border-box;
+    }
+    
+    .right button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 10px 0;
+    }
+    
+    .right button:hover {
+    background-color: #165ec9;
+    }
+    
+    .right .create-account {
+    background-color: #42b72a;
+    }
+    
+    .right .create-account:hover {
+    background-color: #36a420;
+    }
+    
+    .right .divider {
+    border-top: 1px solid #dddfe2;
+    margin: 20px 0;
+    }
+    
+    .right p {
+    text-align: center;
+    font-size: 14px;
+    color: #606770;
+    margin-top: 20px;
+    }
+    
+    footer {
+    margin-top: 800px;
+    text-align: center;
+    font-size: 14px;
+    color: #606770;
+    }
+    
