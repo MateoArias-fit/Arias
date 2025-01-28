@@ -3,8 +3,8 @@ document.getElementById("colorChangeBtn").addEventListener("click", function () 
     const currentColor = getComputedStyle(resumeContainer).backgroundColor;
 
     if (currentColor === "rgb(255, 255, 255)") {
-        resumeContainer.style.backgroundColor = "#f4f4f4";
+        resumeContainer.style.backgroundColor = "#88a6c6";
     } else {
-        resumeContainer.style.backgroundColor = "#ffffff"; 
+        resumeContainer.style.backgroundColor = "#ffffff";
     }
 });
