@@ -1,0 +1,46 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Layout: Buttons on left, box on right */
+.container {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    justify-content: space-between;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+button {
+    width: 150px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Box Styling */
+#animated-box {
+    width: 500px;
+    height: 500px;
+    background-color: rgb(70, 70, 70);
+    position: relative;
+    opacity: 0;
+    transition: top 1s ease-in-out, background-color 1s ease-in-out, opacity 0.5s;
+}
+
+.hidden {
+    display: none;
+}
