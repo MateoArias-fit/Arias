@@ -61,7 +61,7 @@ body {
 
 /* Customizable root variables */
 :root {
-    --box-size: 300px; /* Adjust the box size */
-    --box-position: 100px; /* Move box more to the right */
-    --gap-between: 150px; /* Adjust spacing between buttons and box */
+    --box-size: 500px; /* Adjust the box size */
+    --box-position: 200px; /* Move box more to the right */
+    --gap-between: 250px; /* Adjust spacing between buttons and box */
 }
