@@ -1,0 +1,94 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #60c3ff, #abf0e9);
+    font-family: Arial, sans-serif;
+    transition: background 2s ease-in-out;
+}
+
+/* Background colors */
+@keyframes changeBackground {
+    0% { background: linear-gradient(to bottom, #60c3ff, #abf0e9); }
+    25% { background: linear-gradient(to bottom, #ff758c, #ff7eb3); }
+    50% { background: linear-gradient(to bottom, #70e1f5, #ffd194); }
+    75% { background: linear-gradient(to bottom, #ff9a9e, #fad0c4); }
+    100% { background: linear-gradient(to bottom, #60c3ff, #abf0e9); }
+}
+
+body {
+    animation: changeBackground 8s infinite;
+}
+
+/* Calculator container */
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 220px;
+}
+
+#display {
+    width: 90%; 
+    height: 50px;
+    font-size: 1.5em;
+    text-align: right;
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1); 
+    margin: 0 auto;
+    display: block;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-top: 20px;
+}
+
+button {
+    background: transparent;
+    border: none;
+    padding: 15px;
+    font-size: 1.2em;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+    z-index: 1;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* hover effect */
+button::before {
+    content: "";
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background: black;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.2s ease-in-out;
+    z-index: -1;
+}
+
+button:hover::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+button:hover {
+    color: white;
+}
