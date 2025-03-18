@@ -1,0 +1,174 @@
+/* ========== GLOBAL STYLING ========== */
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    background: url('c:/Users/jm200/Desktop/S4 - TECHNICAL/wallpaper.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 0.8s ease-out forwards;
+}
+
+/* ========== HEADER STYLING ========== */
+header {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    width: 100%;
+    text-align: left;
+    color: white;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: slideDown 1s ease-out forwards;
+}
+
+h1, h2 {
+    font-family: 'Brush Script MT', cursive;
+}
+
+h1 {
+    font-size: 3.5rem;
+    margin-bottom: 5px;
+}
+
+h2 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    font-weight: 300;
+}
+
+/* ========== MAIN MENU BUTTON STYLING ========== */
+.main-menu-btn {
+    position: absolute;
+    top: 30px;
+    right: 60px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.main-menu-btn:hover {
+    background: yellow;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* ========== CARD STYLING ========== */
+.container {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+    text-align: center;
+    border: 3px solid yellow;
+    width: 250px;
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: scale(0.8);
+    animation: fadeInScale 0.6s ease-out forwards;
+    cursor: pointer;
+}
+
+/* CLICK EFFECT */
+.card:active {
+    transform: scale(0.95);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card-title {
+    background: yellow;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 20px rgba(255, 255, 0, 0.5);
+}
+
+/* Image Zoom Effect */
+.card img {
+    width: 100%;
+    height: 650px;
+    object-fit: cover;
+    transition: transform 0.4s ease-in-out;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+}
+
+/* Overlay Hover Effect */
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+    transform: translateY(20px);
+}
+
+.card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ========== ANIMATIONS ========== */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInScale {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
